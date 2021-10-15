@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 //831ec66c83c84a2792b943a37e1e3e56
     BottomNavigationView bottomNavigationView;
     FloatingActionButton floatAct;
-    private View_Page view_page;
-    private ArrayList<Articles> articlesArrayList;
-    private View view_new;
-    private RecyclerView rview;
+//    private View_Page view_page;
+//    private ArrayList<Articles> articlesArrayList;
+//    private View view_new;
+//    private RecyclerView rview;
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -41,12 +43,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        rview = findViewById(R.id.news_ap);
-        articlesArrayList = new ArrayList<>();
-        view_page = new View_Page(articlesArrayList, this);
-        rview.setLayoutManager(new LinearLayoutManager(this));
-        rview.setAdapter(view_page);
-        getNews();
+//        rview = findViewById(R.id.news_ap);
+//        articlesArrayList = new ArrayList<>();
+//        view_page = new View_Page(articlesArrayList, this);
+//        rview.setLayoutManager(new LinearLayoutManager(this));
+//        rview.setAdapter(view_page);
+        //getNews();
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
 
@@ -60,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment temp = null;
+                Intent pref;
 
                 switch (item.getItemId())
                 {
@@ -71,8 +79,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.history : temp = new History();
                         break;
 
-                    case R.id.shuffle : temp = new Shuffle();
+                    case R.id.setting :
+                         pref = new Intent(getApplicationContext(), Setting.class);
+                         startActivity(pref);
                          break;
+
 
                 }
 
@@ -90,30 +101,30 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    private void getNews(){
-        articlesArrayList.clear();
-        String url = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=831ec66c83c84a2792b943a37e1e3e56";
-        String base_url = "https://newsapi.org/";
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(base_url).addConverterFactory(GsonConverterFactory.create()).build();
-        RetrofitAPI retrofitAPI = retrofit.create(RetrofitAPI.class);
-        Call<NewsModel> call;
-        call = retrofitAPI.getAllNews(url);
-
-        call.enqueue(new Callback<NewsModel>() {
-            @Override
-            public void onResponse(Call<NewsModel> call, Response<NewsModel> response) {
-                NewsModel newsModel = response.body();
-                ArrayList<Articles> articles = newsModel.getArticles();
-                for (int i=0; i<articles.size(); i++){
-                    articlesArrayList.add(new Articles(articles.get(i).getTitle(), articles.get(i).getDescription(), articles.get(i).getUrlToImage(),
-                            articles.get(i).getUrl(), articles.get(i).getContent()));
-                }
-            }
-
-            @Override
-            public void onFailure(Call<NewsModel> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+//    private void getNews(){
+//        articlesArrayList.clear();
+//        String url = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=831ec66c83c84a2792b943a37e1e3e56";
+//        String base_url = "https://newsapi.org/";
+//        Retrofit retrofit = new Retrofit.Builder().baseUrl(base_url).addConverterFactory(GsonConverterFactory.create()).build();
+//        RetrofitAPI retrofitAPI = retrofit.create(RetrofitAPI.class);
+//        Call<NewsModel> call;
+//        call = retrofitAPI.getAllNews(url);
+//
+//        call.enqueue(new Callback<NewsModel>() {
+//            @Override
+//            public void onResponse(Call<NewsModel> call, Response<NewsModel> response) {
+//                NewsModel newsModel = response.body();
+//                ArrayList<Articles> articles = newsModel.getArticles();
+//                for (int i=0; i<articles.size(); i++){
+//                    articlesArrayList.add(new Articles(articles.get(i).getTitle(), articles.get(i).getDescription(), articles.get(i).getUrlToImage(),
+//                            articles.get(i).getUrl(), articles.get(i).getContent()));
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<NewsModel> call, Throwable t) {
+//                Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 }

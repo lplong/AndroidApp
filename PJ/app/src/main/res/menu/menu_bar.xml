@@ -12,8 +12,8 @@
     <item android:id="@+id/history"
         android:title="History"
         android:icon="@drawable/ic_baseline_history_24"/>
-    <item android:id="@+id/shuffle"
-        android:title="Shuffle"
-        android:icon="@drawable/ic_baseline_shuffle_24"/>
+    <item android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_baseline_settings_24"/>
 
 </menu>

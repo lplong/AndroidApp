@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PJ">
+        android:theme="@style/Theme.PJ"
+        android:configChanges="orientation|screenSize">
         <activity
             android:name=".Page"
             android:exported="true" />
@@ -23,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Setting" />
+
     </application>
 
 </manifest>

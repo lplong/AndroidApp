@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 //        rview.setAdapter(view_page);
         //getNews();
 
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().hide();
+//        }
 
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);

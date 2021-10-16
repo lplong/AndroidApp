@@ -1913,6 +1913,7 @@ int drawable notification_template_icon_low_bg 0x7f070090
 int drawable notification_tile_bg 0x7f070091
 int drawable notify_panel_notification_icon_bg 0x7f070092
 int drawable preference_list_divider_material 0x7f07009f
+int drawable search_bg 0x7f0700a0
 int drawable test_custom_background 0x7f070093
 int drawable tooltip_frame_dark 0x7f070094
 int drawable tooltip_frame_light 0x7f070095
@@ -2094,7 +2095,6 @@ int id easeOut 0x7f0800ab
 int id east 0x7f0800ac
 int id editTextTextEmailAddress 0x7f0801e0
 int id editTextTextPassword 0x7f0801e1
-int id editTextTextPersonName2 0x7f0801e5
 int id edit_query 0x7f0800ad
 int id elastic 0x7f0800ae
 int id end 0x7f0800af
@@ -2292,6 +2292,8 @@ int id search_mag_icon 0x7f080168
 int id search_plate 0x7f080169
 int id search_src_text 0x7f08016a
 int id search_voice_btn 0x7f08016b
+int id searchview 0x7f0801f8
+int id searchview_home 0x7f0801f9
 int id seekbar 0x7f0801f3
 int id seekbar_value 0x7f0801f4
 int id select_dialog_listview 0x7f08016c

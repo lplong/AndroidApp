@@ -1914,6 +1914,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
+drawable search_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2095,7 +2096,6 @@ id easeOut
 id east
 id editTextTextEmailAddress
 id editTextTextPassword
-id editTextTextPersonName2
 id edit_query
 id elastic
 id end
@@ -2293,6 +2293,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id searchview
+id searchview_home
 id seekbar
 id seekbar_value
 id select_dialog_listview

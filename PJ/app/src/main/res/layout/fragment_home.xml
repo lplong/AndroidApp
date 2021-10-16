@@ -7,19 +7,19 @@
     tools:context=".Home">
 
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview_home"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Search"
-        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        app:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:queryHint="Search Wikipedia" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/news_ap"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/searchview_home"
         tools:listitem="@layout/news_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

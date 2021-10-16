@@ -7,11 +7,9 @@
            android:entries="@array/Language_values"
            android:entryValues="@array/Language_entries" />
 
-       <ListPreference
+       <SwitchPreference
            android:key="Theme"
-           android:title="Theme"
-           android:entries="@array/Theme_values"
-           android:entryValues="@array/Theme_entries" />
+           android:title="Dark Mode" />
 
        <ListPreference
            android:defaultValue="false"

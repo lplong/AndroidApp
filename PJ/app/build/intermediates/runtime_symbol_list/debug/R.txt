@@ -62,6 +62,8 @@ int array Orientation_entries 0x7f130004
 int array Orientation_values 0x7f130005
 int array Theme_entries 0x7f130002
 int array Theme_values 0x7f130003
+int array reply_entries 0x7f130006
+int array reply_values 0x7f130007
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -1159,6 +1161,9 @@ int color cardview_light_background 0x7f05002b
 int color cardview_shadow_end_color 0x7f05002c
 int color cardview_shadow_start_color 0x7f05002d
 int color checkbox_themeable_attribute_color 0x7f05002e
+int color colorAncientNight 0x7f0500d7
+int color colorPrimaryDarkNight 0x7f0500d8
+int color colorPrimaryNight 0x7f0500d9
 int color design_bottom_navigation_shadow_color 0x7f05002f
 int color design_box_stroke_color 0x7f050030
 int color design_dark_default_color_background 0x7f050031
@@ -2293,6 +2298,7 @@ int id select_dialog_listview 0x7f08016c
 int id selected 0x7f08016d
 int id selection_type 0x7f08016e
 int id setting 0x7f0801f0
+int id settings 0x7f0801f7
 int id share 0x7f0801ed
 int id sharedValueSet 0x7f08016f
 int id sharedValueUnset 0x7f080170
@@ -2582,6 +2588,7 @@ int layout preference_widget_switch_compat 0x7f0b0095
 int layout select_dialog_item_material 0x7f0b006e
 int layout select_dialog_multichoice_material 0x7f0b006f
 int layout select_dialog_singlechoice_material 0x7f0b0070
+int layout settings_activity 0x7f0b0096
 int layout support_simple_spinner_dropdown_item 0x7f0b0071
 int layout test_action_chip 0x7f0b0072
 int layout test_chip_zero_corner_radius 0x7f0b0073
@@ -2633,6 +2640,9 @@ int string abc_shareactionprovider_share_with_application 0x7f0f0019
 int string abc_toolbar_collapse_description 0x7f0f001a
 int string app_name 0x7f0f001b
 int string appbar_scrolling_view_behavior 0x7f0f001c
+int string attachment_summary_off 0x7f0f0071
+int string attachment_summary_on 0x7f0f0072
+int string attachment_title 0x7f0f0073
 int string bottom_sheet_behavior 0x7f0f001d
 int string bottomsheet_action_expand_halfway 0x7f0f001e
 int string character_counter_content_description 0x7f0f001f
@@ -2670,6 +2680,7 @@ int string material_timepicker_minute 0x7f0f003c
 int string material_timepicker_pm 0x7f0f003d
 int string material_timepicker_select_time 0x7f0f003e
 int string material_timepicker_text_input_mode_description 0x7f0f003f
+int string messages_header 0x7f0f0074
 int string mtrl_badge_numberless_content_description 0x7f0f0040
 int string mtrl_chip_close_icon_content_description 0x7f0f0041
 int string mtrl_exceed_max_badge_number_content_description 0x7f0f0042
@@ -2712,9 +2723,14 @@ int string path_password_eye_mask_strike_through 0x7f0f0065
 int string path_password_eye_mask_visible 0x7f0f0066
 int string path_password_strike_through 0x7f0f0067
 int string preference_copied 0x7f0f006d
+int string reply_title 0x7f0f0075
 int string search_menu_title 0x7f0f0068
+int string signature_title 0x7f0f0076
 int string status_bar_notification_info_overflow 0x7f0f0069
 int string summary_collapsed_preference_list 0x7f0f006e
+int string sync_header 0x7f0f0077
+int string sync_title 0x7f0f0078
+int string title_activity_settings 0x7f0f0079
 int string v7_preference_off 0x7f0f006f
 int string v7_preference_on 0x7f0f0070
 int style AlertDialog_AppCompat 0x7f100000
@@ -5503,6 +5519,7 @@ int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f0300e3 }
 int styleable include_constraintSet 0
 int xml preferences 0x7f120006
+int xml root_preferences 0x7f120007
 int xml standalone_badge 0x7f120000
 int xml standalone_badge_gravity_bottom_end 0x7f120001
 int xml standalone_badge_gravity_bottom_start 0x7f120002

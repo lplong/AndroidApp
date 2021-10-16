@@ -63,11 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new Home()).commit();
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment temp = null;
-                Intent pref;
 
                 switch (item.getItemId())
                 {
@@ -80,8 +79,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.setting :
-                         pref = new Intent(getApplicationContext(), Setting.class);
+                         Intent pref = new Intent(getApplicationContext(),SettingsActivity.class);
                          startActivity(pref);
+                         finish();
                          break;
 
 

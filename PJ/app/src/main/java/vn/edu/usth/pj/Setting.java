@@ -5,8 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import android.preference.Preference;
-import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.PreferenceManager;
+import android.preference.PreferenceManager;
 
 import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
@@ -14,7 +13,6 @@ import android.preference.PreferenceActivity;
 
 
 public class Setting extends PreferenceActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,21 +25,19 @@ public class Setting extends PreferenceActivity {
 
         ListPreference lp = (ListPreference) findPreference("Orientation");
         String orien = sp.getString("Orientation", "false");
-        if ("1".equals(orien)){
+        if ("1".equals(orien)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
-        }
-        else if ("2".equals(orien)){
+        } else if ("2".equals(orien)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        }
-        else if ("3".equals(orien)){
+        } else if ("3".equals(orien)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
 
         lp.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object o) {
-                String item = (String)o;
-                if (preference.getKey().equals("Orientation")){
+                String item = (String) o;
+                if (preference.getKey().equals("Orientation")) {
                     switch (item) {
                         case "1":
                             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
@@ -59,9 +55,10 @@ public class Setting extends PreferenceActivity {
         });
     }
 
-    protected void onResume(){
+    protected void onResume() {
         LoadSetting();
         super.onResume();
     }
-
 }
+
+

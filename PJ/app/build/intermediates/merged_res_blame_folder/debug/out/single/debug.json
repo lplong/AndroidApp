@@ -64,6 +64,10 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_yt.png.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_shuffle_24.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_shuffle_24.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_history_24.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_history_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_r6.jpg.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\r6.jpg"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_save_24.xml.flat",
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_search_24.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_steam.jpg.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\steam.jpg"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\menu_page_menu.xml.flat",

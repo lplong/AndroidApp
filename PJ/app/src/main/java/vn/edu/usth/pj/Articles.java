@@ -3,9 +3,7 @@ package vn.edu.usth.pj;
 public class Articles {
     private String title;
     private String description;
-    private String urlToImage;
-    private String url;
-    private String content;
+    private int image;
 
     public String getTitle() {
         return title;
@@ -23,35 +21,18 @@ public class Articles {
         this.description = description;
     }
 
-    public String getUrlToImage() {
-        return urlToImage;
+    public int image() {
+        return image;
     }
 
-    public void setUrlToImage(String urlToImage) {
-        this.urlToImage = urlToImage;
+    public void setImage(int Image) {
+        this.image = image;
     }
 
-    public String getUrl() {
-        return url;
-    }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public Articles(String title, String description, String urlToImage, String url, String content) {
+    public Articles(String title, String description, int image) {
         this.title = title;
         this.description = description;
-        this.urlToImage = urlToImage;
-        this.url = url;
-        this.content = content;
+        this.image = image;
     }
 }

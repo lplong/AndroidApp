@@ -21,6 +21,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
 //831ec66c83c84a2792b943a37e1e3e56
     BottomNavigationView bottomNavigationView;
     FloatingActionButton floatAct;
-//    private View_Page view_page;
-//    private ArrayList<Articles> articlesArrayList;
-//    private View view_new;
-//    private RecyclerView rview;
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -43,17 +40,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        rview = findViewById(R.id.news_ap);
-//        articlesArrayList = new ArrayList<>();
-//        view_page = new View_Page(articlesArrayList, this);
-//        rview.setLayoutManager(new LinearLayoutManager(this));
-//        rview.setAdapter(view_page);
-        //getNews();
-
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().hide();
-//        }
-
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
 
@@ -61,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView.getMenu().getItem(2).setEnabled(false);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new Home()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,new Home()).commit();
 
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
@@ -87,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,temp).commit();
                 return true;
             }
         });
@@ -96,11 +82,13 @@ public class MainActivity extends AppCompatActivity {
         floatAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new Account()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,new Account()).commit();
             }
         });
 
     }
+
+
 //    private void getNews(){
 //        articlesArrayList.clear();
 //        String url = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=831ec66c83c84a2792b943a37e1e3e56";

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,13 +15,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> {
-    private ArrayList<Articles> articlesArrayList;
+public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implements Filterable {
+    private List<Articles> articlesArrayList;
+    private List<Articles> articlesArrayList_search;
     private Context context;
 
-    public View_Page(ArrayList<Articles> articlesArrayList, Context context) {
+    public View_Page(List<Articles> articlesArrayList, Context context) {
         this.articlesArrayList = articlesArrayList;
+        this.articlesArrayList_search = articlesArrayList;
         this.context = context;
     }
 
@@ -33,18 +38,17 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull View_Page.ViewHolder holder, int position) {
         Articles articles = articlesArrayList.get(position);
+
         holder.subV.setText(articles.getDescription());
         holder.titleV.setText(articles.getTitle());
-        Picasso.get().load(articles.getUrlToImage()).into(holder.imageV);
+        holder.imageV.setImageResource(articles.image());
         holder.itemView.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(android.view.View view) {
                 Intent i = new Intent(context, Page.class);
                 i.putExtra("title", articles.getTitle());
-                i.putExtra("content", articles.getContent());
                 i.putExtra("desc", articles.getDescription());
-                i.putExtra("image", articles.getUrlToImage());
-                i.putExtra("url", articles.getUrl());
+                i.putExtra("image", articles.image());
                 context.startActivity(i);
             }
         });
@@ -56,6 +60,7 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> {
         return articlesArrayList.size();
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView titleV, subV;
         private ImageView imageV;
@@ -65,5 +70,37 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> {
             subV = itemView.findViewById(R.id.sub);
             imageV = itemView.findViewById((R.id.view));
         }
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter(){
+
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String search = charSequence.toString();
+                if (search.isEmpty()){
+                    articlesArrayList = articlesArrayList_search;
+                }
+                else{
+                    List<Articles> list = new ArrayList<>();
+                    for (Articles i: articlesArrayList_search){
+                        if (i.getTitle().toLowerCase().contains(search.toLowerCase())){
+                            list.add(i);
+                        }
+                    }
+                    articlesArrayList = list;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = articlesArrayList;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                articlesArrayList = (List<Articles>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 }

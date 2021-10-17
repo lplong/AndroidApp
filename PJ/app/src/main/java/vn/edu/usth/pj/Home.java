@@ -2,11 +2,17 @@ package vn.edu.usth.pj;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +25,11 @@ public class Home extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private RecyclerView rview;
+    private View_Page view_page;
+    SearchView searchView;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -60,6 +71,37 @@ public class Home extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         getActivity().setTitle("WikipediA");
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        rview = (RecyclerView) rootView.findViewById(R.id.news_ap);
+        searchView = (SearchView) rootView.findViewById(R.id.searchview_home);
+        rview.setLayoutManager(new LinearLayoutManager(getContext()));
+        view_page = new View_Page(getArtile(), getContext());
+        rview.setAdapter(view_page);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                view_page.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                view_page.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+        return rootView;
+
+    }
+
+    private List<Articles> getArtile() {
+        List<Articles> list = new ArrayList<>();
+        list.add(new Articles("Rainbow Six Siege", "Online tactical shooter video game by Ubisoft", R.drawable.r6));
+        list.add(new Articles("Steam", "Video game service", R.drawable.steam));
+        list.add(new Articles("YouTube", "Online video platform owned by Google", R.drawable.yt));
+        return list;
     }
 }

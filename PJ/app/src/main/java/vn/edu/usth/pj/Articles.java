@@ -4,6 +4,15 @@ public class Articles {
     private String title;
     private String description;
     private int image;
+    private String content;
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 
     public String getTitle() {
         return title;
@@ -30,9 +39,10 @@ public class Articles {
     }
 
 
-    public Articles(String title, String description, int image) {
+    public Articles(String title, String description, int image, String content) {
         this.title = title;
         this.description = description;
         this.image = image;
+        this.content = content;
     }
 }

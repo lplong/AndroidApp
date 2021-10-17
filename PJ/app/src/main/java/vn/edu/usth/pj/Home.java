@@ -76,7 +76,7 @@ public class Home extends Fragment {
         rview = (RecyclerView) rootView.findViewById(R.id.news_ap);
         searchView = (SearchView) rootView.findViewById(R.id.searchview_home);
         rview.setLayoutManager(new LinearLayoutManager(getContext()));
-        view_page = new View_Page(getArtile(), getContext());
+        view_page = new View_Page(getArticle(), getContext());
         rview.setAdapter(view_page);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -97,11 +97,11 @@ public class Home extends Fragment {
 
     }
 
-    private List<Articles> getArtile() {
+    private List<Articles> getArticle() {
         List<Articles> list = new ArrayList<>();
-        list.add(new Articles("Rainbow Six Siege", "Online tactical shooter video game by Ubisoft", R.drawable.r6));
-        list.add(new Articles("Steam", "Video game service", R.drawable.steam));
-        list.add(new Articles("YouTube", "Online video platform owned by Google", R.drawable.yt));
+        list.add(new Articles("Rainbow Six Siege", "Online tactical shooter video game by Ubisoft", R.drawable.r6, getString(R.string.r6)));
+        list.add(new Articles("Steam", "Video game service", R.drawable.steam, getString(R.string.steam)));
+        list.add(new Articles("YouTube", "Online video platform owned by Google", R.drawable.yt, getString(R.string.yt)));
         return list;
     }
 }

@@ -2145,6 +2145,7 @@ int id ignore 0x7f0800d8
 int id ignoreRequest 0x7f0800d9
 int id image 0x7f0800da
 int id imageView 0x7f0801e2
+int id imageView2 0x7f0801fe
 int id immediateStop 0x7f0800db
 int id included 0x7f0800dc
 int id info 0x7f0800dd
@@ -2373,6 +2374,9 @@ int id textSpacerNoButtons 0x7f0801ac
 int id textSpacerNoTitle 0x7f0801ad
 int id textStart 0x7f0801ae
 int id textTop 0x7f0801af
+int id textView 0x7f0801ff
+int id textView2 0x7f080200
+int id textView3 0x7f080201
 int id text_input_end_icon 0x7f0801b0
 int id text_input_error_icon 0x7f0801b1
 int id text_input_start_icon 0x7f0801b2
@@ -2729,16 +2733,19 @@ int string path_password_eye_mask_strike_through 0x7f0f0065
 int string path_password_eye_mask_visible 0x7f0f0066
 int string path_password_strike_through 0x7f0f0067
 int string preference_copied 0x7f0f006d
+int string r6 0x7f0f007a
 int string reply_title 0x7f0f0075
 int string search_menu_title 0x7f0f0068
 int string signature_title 0x7f0f0076
 int string status_bar_notification_info_overflow 0x7f0f0069
+int string steam 0x7f0f007b
 int string summary_collapsed_preference_list 0x7f0f006e
 int string sync_header 0x7f0f0077
 int string sync_title 0x7f0f0078
 int string title_activity_settings 0x7f0f0079
 int string v7_preference_off 0x7f0f006f
 int string v7_preference_on 0x7f0f0070
+int string yt 0x7f0f007c
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
 int style AndroidThemeColorAccentYellow 0x7f100002

@@ -2146,6 +2146,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id immediateStop
 id included
 id info
@@ -2374,6 +2375,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2730,16 +2734,19 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string preference_copied
+string r6
 string reply_title
 string search_menu_title
 string signature_title
 string status_bar_notification_info_overflow
+string steam
 string summary_collapsed_preference_list
 string sync_header
 string sync_title
 string title_activity_settings
 string v7_preference_off
 string v7_preference_on
+string yt
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

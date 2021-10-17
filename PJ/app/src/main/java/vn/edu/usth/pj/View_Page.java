@@ -36,7 +36,7 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
     }
 
     @Override
-    public void onBindViewHolder(@NonNull View_Page.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull View_Page.ViewHolder holder,int position) {
         Articles articles = articlesArrayList.get(position);
 
         holder.subV.setText(articles.getDescription());
@@ -46,9 +46,10 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
             @Override
             public void onClick(android.view.View view) {
                 Intent i = new Intent(context, Page.class);
-                i.putExtra("title", articles.getTitle());
-                i.putExtra("desc", articles.getDescription());
-                i.putExtra("image", articles.image());
+                i.putExtra("title", articlesArrayList.get(holder.getAdapterPosition()).getTitle());
+                i.putExtra("desc", articlesArrayList.get(holder.getAdapterPosition()).getDescription());
+                i.putExtra("image", articlesArrayList.get(holder.getAdapterPosition()).image());
+                i.putExtra("content", articlesArrayList.get(holder.getAdapterPosition()).getContent());
                 context.startActivity(i);
             }
         });

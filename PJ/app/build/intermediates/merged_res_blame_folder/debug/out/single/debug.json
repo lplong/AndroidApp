@@ -4,20 +4,12 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_find_in_page_24.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_search.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\menu_toolbar.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\menu\\toolbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\xml_preferences.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\xml\\preferences.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
@@ -36,14 +28,6 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\xml\\root_preferences.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_setting.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_setting.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -58,14 +42,6 @@
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_yt.png.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\yt.png"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_shuffle_24.xml.flat",
@@ -88,16 +64,68 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_history.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_history.xml"
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_format_list_bulleted_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_format_list_bulleted_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_translate_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_translate_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_saved.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_saved.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\menu_page_menu.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\menu\\page_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_setting.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_yt.png.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_format_list_bulleted_24.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_format_list_bulleted_24.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_history_24.xml.flat",
@@ -116,10 +144,6 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -132,48 +156,32 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\activity_page.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_search_black_24dp.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_bg.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\search_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_history_layout.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\history_layout.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_blank.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_blank.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_translate_24.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_translate_24.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_search_24.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_bookmark_24.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_bookmark_24.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_steam.jpg.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\steam.jpg"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\menu_page_menu.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\menu\\page_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_account.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_account.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_settings_activity.xml.flat",

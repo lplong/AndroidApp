@@ -56,6 +56,8 @@ int animator mtrl_fab_hide_motion_spec 0x7f020016
 int animator mtrl_fab_show_motion_spec 0x7f020017
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020018
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020019
+int array Font_entries 0x7f130008
+int array Font_values 0x7f130009
 int array Language_entries 0x7f130000
 int array Language_values 0x7f130001
 int array Orientation_entries 0x7f130004
@@ -1859,6 +1861,7 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable ic_arrow_down_24dp 0x7f07009e
 int drawable ic_baseline_account_circle_24 0x7f070096
+int drawable ic_baseline_bookmark_24 0x7f0700a4
 int drawable ic_baseline_find_in_page_24 0x7f070097
 int drawable ic_baseline_font_download_24 0x7f070098
 int drawable ic_baseline_format_list_bulleted_24 0x7f070099
@@ -2017,6 +2020,7 @@ int id bestChoice 0x7f08005c
 int id blocking 0x7f08005d
 int id bottom 0x7f08005e
 int id bottomNavigationView 0x7f0801ea
+int id bottomNavigationView_page 0x7f080202
 int id bottomappbar 0x7f08005f
 int id bottomnavigationbar 0x7f080060
 int id bounce 0x7f080061
@@ -2132,7 +2136,6 @@ int id groups 0x7f0800cc
 int id guideline 0x7f0800cd
 int id header_title 0x7f0800ce
 int id hideable 0x7f0800cf
-int id history 0x7f0800d0
 int id home 0x7f0800d1
 int id homeAsUp 0x7f0800d2
 int id honorRequest 0x7f0800d3
@@ -2277,6 +2280,7 @@ int id row_index_key 0x7f080156
 int id save 0x7f0801eb
 int id save_non_transition_alpha 0x7f080157
 int id save_overlay_view 0x7f080158
+int id saved 0x7f080205
 int id sawtooth 0x7f080159
 int id scale 0x7f08015a
 int id screen 0x7f08015b
@@ -2377,6 +2381,7 @@ int id textTop 0x7f0801af
 int id textView 0x7f0801ff
 int id textView2 0x7f080200
 int id textView3 0x7f080201
+int id text_history 0x7f080204
 int id text_input_end_icon 0x7f0801b0
 int id text_input_error_icon 0x7f0801b1
 int id text_input_start_icon 0x7f0801b2
@@ -2515,10 +2520,11 @@ int layout design_text_input_start_icon 0x7f0b002c
 int layout expand_button 0x7f0b0084
 int layout fragment_account 0x7f0b002e
 int layout fragment_blank 0x7f0b002f
-int layout fragment_history 0x7f0b0030
 int layout fragment_home 0x7f0b0031
+int layout fragment_saved 0x7f0b0098
 int layout fragment_search 0x7f0b0032
 int layout fragment_setting 0x7f0b0083
+int layout history_layout 0x7f0b0097
 int layout image_frame 0x7f0b0085
 int layout material_chip_input_combo 0x7f0b0034
 int layout material_clock_display 0x7f0b0035
@@ -2979,6 +2985,7 @@ int style CardView 0x7f1000e4
 int style CardView_Dark 0x7f1000e5
 int style CardView_Light 0x7f1000e6
 int style EmptyTheme 0x7f1000e7
+int style FontSizeLarge 0x7f1002f7
 int style MaterialAlertDialog_MaterialComponents 0x7f1000e8
 int style MaterialAlertDialog_MaterialComponents_Body_Text 0x7f1000e9
 int style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar 0x7f1000ea

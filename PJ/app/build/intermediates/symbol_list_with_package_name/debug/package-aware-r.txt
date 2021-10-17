@@ -57,6 +57,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array Font_entries
+array Font_values
 array Language_entries
 array Language_values
 array Orientation_entries
@@ -1860,6 +1862,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_down_24dp
 drawable ic_baseline_account_circle_24
+drawable ic_baseline_bookmark_24
 drawable ic_baseline_find_in_page_24
 drawable ic_baseline_font_download_24
 drawable ic_baseline_format_list_bulleted_24
@@ -2018,6 +2021,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomNavigationView
+id bottomNavigationView_page
 id bottomappbar
 id bottomnavigationbar
 id bounce
@@ -2133,7 +2137,6 @@ id groups
 id guideline
 id header_title
 id hideable
-id history
 id home
 id homeAsUp
 id honorRequest
@@ -2278,6 +2281,7 @@ id row_index_key
 id save
 id save_non_transition_alpha
 id save_overlay_view
+id saved
 id sawtooth
 id scale
 id screen
@@ -2378,6 +2382,7 @@ id textTop
 id textView
 id textView2
 id textView3
+id text_history
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2516,10 +2521,11 @@ layout design_text_input_start_icon
 layout expand_button
 layout fragment_account
 layout fragment_blank
-layout fragment_history
 layout fragment_home
+layout fragment_saved
 layout fragment_search
 layout fragment_setting
+layout history_layout
 layout image_frame
 layout material_chip_input_combo
 layout material_clock_display
@@ -2980,6 +2986,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
+style FontSizeLarge
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar

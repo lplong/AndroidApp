@@ -31,4 +31,16 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="Font_entries">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Font_values">
+        <item>Large</item>
+        <item>Default</item>
+    </string-array>
+
+
 </resources>

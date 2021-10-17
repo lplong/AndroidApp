@@ -23,8 +23,12 @@
         android:theme="@style/Theme.PJ" >
         <activity
             android:name="vn.edu.usth.pj.SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
+            android:label="Settings"
+            android:parentActivityName="vn.edu.usth.pj.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name="vn.edu.usth.pj.Page"
             android:exported="true" />

@@ -1,12 +1,18 @@
 package vn.edu.usth.pj;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Page extends AppCompatActivity {
     String title, desc, content;
@@ -22,6 +28,7 @@ public class Page extends AppCompatActivity {
         image = getIntent().getIntExtra("image", R.drawable.r6);
         content = getIntent().getStringExtra("content");
         setPageContent(title, desc, image, content);
+
     }
 
     private void setPageContent(String title, String desc, int image, String content) {
@@ -37,5 +44,7 @@ public class Page extends AppCompatActivity {
         TextView cont = findViewById(R.id.textView3);
         cont.setText(content);
     }
+
+
 
 }

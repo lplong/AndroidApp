@@ -1,36 +1,34 @@
-vn/edu/usth/pj/NewsModel.java
- vn.edu.usth.pj.NewsModel
 vn/edu/usth/pj/BuildConfig.java
  vn.edu.usth.pj.BuildConfig
+vn/edu/usth/pj/NewsModel.java
+ vn.edu.usth.pj.NewsModel
 vn/edu/usth/pj/RetrofitAPI.java
  vn.edu.usth.pj.RetrofitAPI
+vn/edu/usth/pj/Articles.java
+ vn.edu.usth.pj.Articles
 vn/edu/usth/pj/Setting.java
  vn.edu.usth.pj.Setting
  vn.edu.usth.pj.Setting$1
+vn/edu/usth/pj/Search.java
+ vn.edu.usth.pj.Search
 vn/edu/usth/pj/Page.java
  vn.edu.usth.pj.Page
-vn/edu/usth/pj/History.java
- vn.edu.usth.pj.History
-vn/edu/usth/pj/Home.java
- vn.edu.usth.pj.Home
- vn.edu.usth.pj.Home$1
-vn/edu/usth/pj/BlankFragment.java
- vn.edu.usth.pj.BlankFragment
 vn/edu/usth/pj/View_Page.java
  vn.edu.usth.pj.View_Page
  vn.edu.usth.pj.View_Page$1
  vn.edu.usth.pj.View_Page$2
  vn.edu.usth.pj.View_Page$ViewHolder
-vn/edu/usth/pj/Articles.java
- vn.edu.usth.pj.Articles
-vn/edu/usth/pj/Search.java
- vn.edu.usth.pj.Search
+vn/edu/usth/pj/Account.java
+ vn.edu.usth.pj.Account
+vn/edu/usth/pj/Saved.java
+ vn.edu.usth.pj.Saved
+vn/edu/usth/pj/Home.java
+ vn.edu.usth.pj.Home
+ vn.edu.usth.pj.Home$1
 vn/edu/usth/pj/SettingsActivity.java
  vn.edu.usth.pj.SettingsActivity
  vn.edu.usth.pj.SettingsActivity$SettingsFragment
  vn.edu.usth.pj.SettingsActivity$SettingsFragment$1
-vn/edu/usth/pj/Account.java
- vn.edu.usth.pj.Account
 vn/edu/usth/pj/MainActivity.java
  vn.edu.usth.pj.MainActivity
  vn.edu.usth.pj.MainActivity$1

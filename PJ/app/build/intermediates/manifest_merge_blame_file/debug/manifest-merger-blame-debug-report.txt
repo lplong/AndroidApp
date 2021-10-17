@@ -15,7 +15,7 @@
 11-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-33:19
+13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-37:19
 14        android:allowBackup="true"
 14-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:9:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,48 +35,55 @@
 23        android:theme="@style/Theme.PJ" >
 23-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:15:9-40
 24        <activity
-24-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:16:9-19:63
+24-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:17:9-23:20
 25            android:name="vn.edu.usth.pj.SettingsActivity"
-25-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:17:13-45
-26            android:exported="false"
+25-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:17:19-51
+26            android:label="Settings"
 26-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:18:13-37
-27            android:label="@string/title_activity_settings" />
-27-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:19:13-60
-28        <activity
-28-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:9-22:39
-29            android:name="vn.edu.usth.pj.Page"
-29-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:21:13-33
-30            android:exported="true" />
-30-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:13-36
-31        <activity
-31-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:23:9-31:20
-32            android:name="vn.edu.usth.pj.MainActivity"
-32-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:24:13-41
-33            android:exported="true" >
-33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:13-36
-34            <intent-filter>
-34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-30:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:17-69
-35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:17-77
-37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity android:name="vn.edu.usth.pj.Setting" />
-40-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:9-45
-40-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:19-42
-41
-42        <provider
-42-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-43            android:name="com.squareup.picasso.PicassoProvider"
-43-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-44            android:authorities="vn.edu.usth.pj.com.squareup.picasso"
-44-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-45            android:exported="false" />
-45-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-46    </application>
-47
-48</manifest>
+27            android:parentActivityName="vn.edu.usth.pj.MainActivity" >
+27-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:19:13-55
+28            <meta-data
+28-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:13-22:48
+29                android:name="android.support.PARENT_ACTIVITY"
+29-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:21:17-63
+30                android:value=".MainActivity" />
+30-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:17-46
+31        </activity>
+32        <activity
+32-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:24:9-26:39
+33            android:name="vn.edu.usth.pj.Page"
+33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:13-33
+34            android:exported="true" />
+34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-36
+35        <activity
+35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:9-35:20
+36            android:name="vn.edu.usth.pj.MainActivity"
+36-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:13-41
+37            android:exported="true" >
+37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-36
+38            <intent-filter>
+38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-34:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:17-69
+39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:17-77
+41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity android:name="vn.edu.usth.pj.Setting" />
+44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:9-45
+44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:19-42
+45
+46        <provider
+46-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+47            android:name="com.squareup.picasso.PicassoProvider"
+47-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+48            android:authorities="vn.edu.usth.pj.com.squareup.picasso"
+48-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+49            android:exported="false" />
+49-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+50    </application>
+51
+52</manifest>

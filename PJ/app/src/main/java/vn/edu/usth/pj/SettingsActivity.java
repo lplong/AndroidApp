@@ -1,5 +1,6 @@
 package vn.edu.usth.pj;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
@@ -31,17 +33,11 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent i = new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(i);
-        finish();
-    }
-
 
     public static class SettingsFragment extends PreferenceFragmentCompat {
         private SwitchPreference pref;
+        private ListPreference Lpref;
+
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.preferences, rootKey);
@@ -63,6 +59,21 @@ public class SettingsActivity extends AppCompatActivity {
                     return true;
                 }
             });
+
+//            Lpref = (ListPreference) findPreference("Font Size");
+//            Lpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+//                @Override
+//                public boolean onPreferenceChange(Preference preference, Object newValue) {
+//                    int themeID;
+//                    String FontPref = sp.getString("Font Size", "-1");
+//                    if (FontPref == "Large"){
+//                        themeID = R.style.FontSizeLarge;
+//                        setTheme(themeID);
+//                    }
+//                    return true;
+//                }
+//            });
+
         }
     }
 }

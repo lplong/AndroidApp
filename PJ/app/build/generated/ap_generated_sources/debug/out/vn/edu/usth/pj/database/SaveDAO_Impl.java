@@ -5,6 +5,7 @@ import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.room.util.StringUtil;
@@ -24,6 +25,8 @@ public final class SaveDAO_Impl implements SaveDAO {
   private final EntityInsertionAdapter<Save_Page> __insertionAdapterOfSave_Page;
 
   private final EntityDeletionOrUpdateAdapter<Save_Page> __deletionAdapterOfSave_Page;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteAll;
 
   public SaveDAO_Impl(RoomDatabase __db) {
     this.__db = __db;
@@ -59,6 +62,13 @@ public final class SaveDAO_Impl implements SaveDAO {
         stmt.bindLong(1, value.getId());
       }
     };
+    this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "DELETE FROM Saved";
+        return _query;
+      }
+    };
   }
 
   @Override
@@ -82,6 +92,20 @@ public final class SaveDAO_Impl implements SaveDAO {
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void deleteAll() {
+    __db.assertNotSuspendingTransaction();
+    final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteAll.acquire();
+    __db.beginTransaction();
+    try {
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfDeleteAll.release(_stmt);
     }
   }
 

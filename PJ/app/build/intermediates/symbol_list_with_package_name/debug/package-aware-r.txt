@@ -1863,6 +1863,7 @@ drawable design_snackbar_background
 drawable ic_arrow_down_24dp
 drawable ic_baseline_account_circle_24
 drawable ic_baseline_bookmark_24
+drawable ic_baseline_delete_24
 drawable ic_baseline_find_in_page_24
 drawable ic_baseline_font_download_24
 drawable ic_baseline_format_list_bulleted_24
@@ -2072,6 +2073,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -2627,6 +2629,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menu_bar
 menu page_menu
+menu save_menu
 menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round

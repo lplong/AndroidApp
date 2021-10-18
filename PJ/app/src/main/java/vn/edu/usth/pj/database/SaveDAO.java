@@ -22,4 +22,8 @@ public interface SaveDAO {
 
     @Delete
     void delete(Save_Page save_page);
+
+    @Query("DELETE FROM Saved")
+    void deleteAll();
+
 }

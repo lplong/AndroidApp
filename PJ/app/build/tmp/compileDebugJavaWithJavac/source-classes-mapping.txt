@@ -10,6 +10,7 @@ vn/edu/usth/pj/View_Page.java
  vn.edu.usth.pj.View_Page$ViewHolder
 vn/edu/usth/pj/Saved.java
  vn.edu.usth.pj.Saved
+ vn.edu.usth.pj.Saved$1
 vn/edu/usth/pj/Home.java
  vn.edu.usth.pj.Home
  vn.edu.usth.pj.Home$1

@@ -65,8 +65,4 @@ public class Page extends AppCompatActivity {
         TextView cont = findViewById(R.id.textView3);
         cont.setText(content);
     }
-
-
-
-
 }

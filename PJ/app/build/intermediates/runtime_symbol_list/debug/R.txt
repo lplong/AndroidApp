@@ -1862,6 +1862,7 @@ int drawable design_snackbar_background 0x7f070064
 int drawable ic_arrow_down_24dp 0x7f07009e
 int drawable ic_baseline_account_circle_24 0x7f070096
 int drawable ic_baseline_bookmark_24 0x7f0700a4
+int drawable ic_baseline_delete_24 0x7f0700a5
 int drawable ic_baseline_find_in_page_24 0x7f070097
 int drawable ic_baseline_font_download_24 0x7f070098
 int drawable ic_baseline_format_list_bulleted_24 0x7f070099
@@ -2071,6 +2072,7 @@ int id decelerate 0x7f08008d
 int id decelerateAndComplete 0x7f08008e
 int id decor_content_parent 0x7f08008f
 int id default_activity_button 0x7f080090
+int id delete 0x7f080209
 int id deltaRelative 0x7f080091
 int id dependency_ordering 0x7f080092
 int id design_bottom_sheet 0x7f080093
@@ -2626,6 +2628,7 @@ int layout text_view_with_theme_line_height 0x7f0b007f
 int layout text_view_without_line_height 0x7f0b0080
 int menu menu_bar 0x7f0c0000
 int menu page_menu 0x7f0c0001
+int menu save_menu 0x7f0c0003
 int menu toolbar 0x7f0c0002
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001

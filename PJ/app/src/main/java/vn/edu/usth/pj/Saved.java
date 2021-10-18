@@ -1,15 +1,23 @@
 package vn.edu.usth.pj;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.AlertDialogLayout;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +72,16 @@ public class Saved extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        setHasOptionsMenu(true);
     }
+
+
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.save_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -81,5 +98,23 @@ public class Saved extends Fragment {
         rview.setAdapter(view_save);
 
         return rootView;
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.delete:
+                new AlertDialog.Builder(getContext()).setTitle("Confirm to delete Saved")
+                        .setNegativeButton("No", null)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                SavedDatabase.getInstance(getContext()).saveDAO().deleteAll();
+                                Toast.makeText(getContext(), "Delete Successful", Toast.LENGTH_LONG).show();
+                            }
+                        })
+                        .show();
+                break;
+        }
+        return true;
     }
 }

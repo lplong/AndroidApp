@@ -84,6 +84,15 @@
 48-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 49            android:exported="false" />
 49-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-50    </application>
-51
-52</manifest>
+50
+51        <service
+51-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+52            android:name="androidx.room.MultiInstanceInvalidationService"
+52-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+53            android:directBootAware="true"
+53-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+54            android:exported="false" />
+54-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+55    </application>
+56
+57</manifest>

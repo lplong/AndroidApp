@@ -2,11 +2,19 @@ package vn.edu.usth.pj;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import vn.edu.usth.pj.database.SavedDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +27,9 @@ public class Saved extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private RecyclerView rview;
+    private View_Save view_save;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -60,6 +71,15 @@ public class Saved extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         getActivity().setTitle("Saved");
-        return inflater.inflate(R.layout.fragment_saved, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_saved, container, false);
+        List<Save_Page> list = new ArrayList<>();
+        list = SavedDatabase.getInstance(getContext()).saveDAO().getAll();
+
+        rview = (RecyclerView) rootView.findViewById(R.id.save_home);
+        rview.setLayoutManager(new LinearLayoutManager(getContext()));
+        view_save = new View_Save(list, getContext());
+        rview.setAdapter(view_save);
+
+        return rootView;
     }
 }

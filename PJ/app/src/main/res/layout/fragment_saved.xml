@@ -5,5 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".Saved">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/save_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/saved_layout" />
+
 
 </FrameLayout>

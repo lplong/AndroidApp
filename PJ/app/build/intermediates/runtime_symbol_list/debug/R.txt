@@ -2019,7 +2019,6 @@ int id beginning 0x7f08005b
 int id bestChoice 0x7f08005c
 int id blocking 0x7f08005d
 int id bottom 0x7f08005e
-int id bottomNavigationView 0x7f0801ea
 int id bottomNavigationView_page 0x7f080202
 int id bottomappbar 0x7f08005f
 int id bottomnavigationbar 0x7f080060
@@ -2278,8 +2277,11 @@ int id right_side 0x7f080154
 int id rounded 0x7f080155
 int id row_index_key 0x7f080156
 int id save 0x7f0801eb
+int id save_desc 0x7f080206
+int id save_home 0x7f080207
 int id save_non_transition_alpha 0x7f080157
 int id save_overlay_view 0x7f080158
+int id save_title 0x7f080208
 int id saved 0x7f080205
 int id sawtooth 0x7f080159
 int id scale 0x7f08015a
@@ -2601,6 +2603,7 @@ int layout preference_widget_seekbar 0x7f0b0092
 int layout preference_widget_seekbar_material 0x7f0b0093
 int layout preference_widget_switch 0x7f0b0094
 int layout preference_widget_switch_compat 0x7f0b0095
+int layout saved_layout 0x7f0b0099
 int layout select_dialog_item_material 0x7f0b006e
 int layout select_dialog_multichoice_material 0x7f0b006f
 int layout select_dialog_singlechoice_material 0x7f0b0070

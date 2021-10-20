@@ -7,10 +7,11 @@
         android:title="Search"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="ifRoom"/>
-    <item android:id="@+id/share"
-        android:title="Share"
+    <item
+        android:id="@+id/share"
         android:icon="@drawable/ic_baseline_save_24"
-        app:showAsAction="never"/>
+        android:title="Share"
+        app:showAsAction="never" />
 
 
 </menu>

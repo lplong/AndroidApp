@@ -18,10 +18,13 @@ vn/edu/usth/pj/NewsModel.java
  vn.edu.usth.pj.NewsModel
 vn/edu/usth/pj/Articles.java
  vn.edu.usth.pj.Articles
+vn/edu/usth/pj/ViewPagerAdapter.java
+ vn.edu.usth.pj.ViewPagerAdapter
 vn/edu/usth/pj/MainActivity.java
  vn.edu.usth.pj.MainActivity
  vn.edu.usth.pj.MainActivity$1
  vn.edu.usth.pj.MainActivity$2
+ vn.edu.usth.pj.MainActivity$3
 vn/edu/usth/pj/Setting.java
  vn.edu.usth.pj.Setting
  vn.edu.usth.pj.Setting$1

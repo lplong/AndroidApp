@@ -2524,7 +2524,6 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_account
-layout fragment_blank
 layout fragment_home
 layout fragment_saved
 layout fragment_search

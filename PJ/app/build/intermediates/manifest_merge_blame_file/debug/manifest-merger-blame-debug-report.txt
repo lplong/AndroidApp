@@ -15,7 +15,7 @@
 11-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-37:19
+13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-39:19
 14        android:allowBackup="true"
 14-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:9:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,31 +50,31 @@
 30-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:17-46
 31        </activity>
 32        <activity
-32-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:24:9-26:39
+32-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:9-27:39
 33            android:name="vn.edu.usth.pj.Page"
-33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:13-33
+33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-33
 34            android:exported="true" />
-34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-36
+34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:13-36
 35        <activity
-35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:9-35:20
+35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:9-36:20
 36            android:name="vn.edu.usth.pj.MainActivity"
-36-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:13-41
+36-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-41
 37            android:exported="true" >
-37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-36
+37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-36
 38            <intent-filter>
-38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-34:29
+38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:13-35:29
 39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:17-69
-39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:25-66
+39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:17-69
+39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:25-66
 40
 41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:17-77
-41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:27-74
+41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:17-77
+41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:27-74
 42            </intent-filter>
 43        </activity>
 44        <activity android:name="vn.edu.usth.pj.Setting" />
-44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:9-45
-44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:19-42
+44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:9-45
+44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:19-42
 45
 46        <provider
 46-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40

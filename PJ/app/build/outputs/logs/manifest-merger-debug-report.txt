@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\81808270a5cc0559f2b9db87cb315b87\transformed\constraintlayout-2.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.preference:preference:1.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f8d126b40aae360114d9628e980e032a\transformed\preference-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -51,20 +51,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\140757696eca7ec1efbdf7371a4acde0\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:2:11-69
@@ -73,7 +73,7 @@ ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-37:19
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:5-39:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\81808270a5cc0559f2b9db87cb315b87\transformed\constraintlayout-2.1.1\AndroidManifest.xml:9:5-20
@@ -117,31 +117,31 @@ ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:21:17-63
 activity#vn.edu.usth.pj.Page
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:24:9-26:39
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:9-27:39
 	android:exported
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:13-33
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-33
 activity#vn.edu.usth.pj.MainActivity
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:9-35:20
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:exported
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:27-74
 activity#vn.edu.usth.pj.Setting
-ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:9-45
+ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:9-45
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:19-42
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:19-42
 uses-sdk
 INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml

@@ -17,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <FrameLayout
+            <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/reFrame"
                 android:layout_width="match_parent"
                 android:layout_height="644dp">
 
-            </FrameLayout>
+            </androidx.viewpager2.widget.ViewPager2>
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottomappbar"

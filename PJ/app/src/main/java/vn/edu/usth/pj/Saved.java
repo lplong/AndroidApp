@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AlertDialogLayout;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
@@ -87,7 +88,6 @@ public class Saved extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        getActivity().setTitle("Saved");
         View rootView = inflater.inflate(R.layout.fragment_saved, container, false);
         List<Save_Page> list = new ArrayList<>();
         list = SavedDatabase.getInstance(getContext()).saveDAO().getAll();

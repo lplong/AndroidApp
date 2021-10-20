@@ -69,8 +69,8 @@ public class Account extends Fragment {
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
     }
     @Override
-    public void onStop() {
-        super.onStop();
+    public void onPause() {
+        super.onPause();
         ((AppCompatActivity)getActivity()).getSupportActionBar().show();
     }
 }

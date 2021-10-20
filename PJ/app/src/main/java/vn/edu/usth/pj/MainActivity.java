@@ -42,15 +42,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
+                        setTitle("WikipediA");
                         break;
                     case 1:
                         bottomNavigationView.getMenu().findItem(R.id.search).setChecked(true);
+                        setTitle("Search");
                         break;
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.personal).setChecked(true);
                         break;
                     case 3:
                         bottomNavigationView.getMenu().findItem(R.id.saved).setChecked(true);
+                        setTitle("Saved");
                         break;
                 }
             }

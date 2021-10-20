@@ -2,6 +2,7 @@ package vn.edu.usth.pj;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -70,7 +71,6 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        getActivity().setTitle("WikipediA");
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
         rview = (RecyclerView) rootView.findViewById(R.id.news_ap);

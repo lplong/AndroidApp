@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory android:title="General">
+       <ListPreference
+           android:key="Languege"
+           android:title="Language"
+           android:entries="@array/Language_values"
+           android:entryValues="@array/Language_entries" />
+
+       <SwitchPreference
+           android:key="Theme"
+           android:title="Dark Mode" />
+
+       <ListPreference
+           android:defaultValue="false"
+           android:key="Orientation"
+           android:title="Orientation"
+           android:entries="@array/Orientation_values"
+           android:entryValues="@array/Orientation_entries" />
+
+       <ListPreference
+           android:defaultValue="false"
+           android:key="Font Size"
+           android:title="Font Size"
+           android:entries="@array/Font_values"
+           android:entryValues="@array/Font_entries" />
+
+
+   </PreferenceCategory>
+</PreferenceScreen>

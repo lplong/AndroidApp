@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Language_entries">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Language_values">
+        <item>English</item>
+        <item>VietNamese</item>
+    </string-array>
+
+    <string-array name="Theme_entries">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Theme_values">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="Orientation_values">
+        <item>Auto</item>
+        <item>Landscape</item>
+        <item>Portrait</item>
+    </string-array>
+
+    <string-array name="Orientation_entries">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

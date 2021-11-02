@@ -6,7 +6,6 @@ vn/edu/usth/pj/Page.java
 vn/edu/usth/pj/View_Page.java
  vn.edu.usth.pj.View_Page
  vn.edu.usth.pj.View_Page$1
- vn.edu.usth.pj.View_Page$2
  vn.edu.usth.pj.View_Page$ViewHolder
 vn/edu/usth/pj/Saved.java
  vn.edu.usth.pj.Saved
@@ -16,6 +15,8 @@ vn/edu/usth/pj/Home.java
  vn.edu.usth.pj.Home$1
 vn/edu/usth/pj/NewsModel.java
  vn.edu.usth.pj.NewsModel
+vn/edu/usth/pj/Register.java
+ vn.edu.usth.pj.Register
 vn/edu/usth/pj/Articles.java
  vn.edu.usth.pj.Articles
 vn/edu/usth/pj/ViewPagerAdapter.java
@@ -25,6 +26,8 @@ vn/edu/usth/pj/MainActivity.java
  vn.edu.usth.pj.MainActivity$1
  vn.edu.usth.pj.MainActivity$2
  vn.edu.usth.pj.MainActivity$3
+vn/edu/usth/pj/API_CER.java
+ vn.edu.usth.pj.API_CER
 vn/edu/usth/pj/Setting.java
  vn.edu.usth.pj.Setting
  vn.edu.usth.pj.Setting$1
@@ -39,8 +42,12 @@ vn/edu/usth/pj/Save_Page.java
 vn/edu/usth/pj/View_Save.java
  vn.edu.usth.pj.View_Save
  vn.edu.usth.pj.View_Save$ViewHolder
+vn/edu/usth/pj/Parse.java
+ vn.edu.usth.pj.Parse
 vn/edu/usth/pj/BuildConfig.java
  vn.edu.usth.pj.BuildConfig
+vn/edu/usth/pj/Service.java
+ vn.edu.usth.pj.Service
 vn/edu/usth/pj/database/SaveDAO.java
  vn.edu.usth.pj.database.SaveDAO
 vn/edu/usth/pj/Account.java

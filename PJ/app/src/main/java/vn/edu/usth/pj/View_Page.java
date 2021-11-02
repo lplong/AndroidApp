@@ -38,21 +38,7 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
     @Override
     public void onBindViewHolder(@NonNull View_Page.ViewHolder holder,int position) {
         Articles articles = articlesArrayList.get(position);
-
-        holder.subV.setText(articles.getDescription());
-        holder.titleV.setText(articles.getTitle());
-        holder.imageV.setImageResource(articles.image());
-        holder.itemView.setOnClickListener(new android.view.View.OnClickListener() {
-            @Override
-            public void onClick(android.view.View view) {
-                Intent i = new Intent(context, Page.class);
-                i.putExtra("title", articlesArrayList.get(holder.getAdapterPosition()).getTitle());
-                i.putExtra("desc", articlesArrayList.get(holder.getAdapterPosition()).getDescription());
-                i.putExtra("image", articlesArrayList.get(holder.getAdapterPosition()).image());
-                i.putExtra("content", articlesArrayList.get(holder.getAdapterPosition()).getContent());
-                context.startActivity(i);
-            }
-        });
+        holder.textV.setText(articles.getParse().getText());
 
     }
 
@@ -63,13 +49,10 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView titleV, subV;
-        private ImageView imageV;
+        private TextView textV;
         public ViewHolder(@NonNull android.view.View itemView) {
             super(itemView);
-            titleV = itemView.findViewById(R.id.text);
-            subV = itemView.findViewById(R.id.sub);
-            imageV = itemView.findViewById((R.id.view));
+            textV = itemView.findViewById(R.id.text);
         }
     }
 
@@ -86,7 +69,7 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
                 else{
                     List<Articles> list = new ArrayList<>();
                     for (Articles i: articlesArrayList_search){
-                        if (i.getTitle().toLowerCase().contains(search.toLowerCase())){
+                        if (i.getParse().getText().toLowerCase().contains(search.toLowerCase())){
                             list.add(i);
                         }
                     }

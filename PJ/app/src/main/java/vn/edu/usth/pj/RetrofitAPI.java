@@ -5,8 +5,8 @@ import retrofit2.http.GET;
 import retrofit2.http.Url;
 
 public interface RetrofitAPI {
-    @GET
-    Call<NewsModel> getAllNews(@Url String url);
+    @GET(API_CER.API + "page=Main_Page")
+    Call<Articles> getArticles();
 
 
 }

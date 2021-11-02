@@ -22,6 +22,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.PJ" >
         <activity
+            android:name="vn.edu.usth.pj.Register"
+            android:exported="false" />
+        <activity
             android:name="vn.edu.usth.pj.SettingsActivity"
             android:label="Settings"
             android:parentActivityName="vn.edu.usth.pj.MainActivity" >

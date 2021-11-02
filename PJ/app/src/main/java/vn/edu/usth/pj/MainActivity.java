@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         bottomNavigationView.setBackground(null);
         bottomNavigationView.getMenu().getItem(2).setEnabled(false);
 

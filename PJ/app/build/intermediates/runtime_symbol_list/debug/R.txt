@@ -2028,6 +2028,8 @@ int id bounceBoth 0x7f080062
 int id bounceEnd 0x7f080063
 int id bounceStart 0x7f080064
 int id button 0x7f0801df
+int id button2 0x7f08020b
+int id button3 0x7f08020a
 int id buttonPanel 0x7f080065
 int id cache_measures 0x7f080066
 int id cancel_action 0x7f080067
@@ -2385,6 +2387,10 @@ int id textTop 0x7f0801af
 int id textView 0x7f0801ff
 int id textView2 0x7f080200
 int id textView3 0x7f080201
+int id textView4 0x7f080203
+int id textView5 0x7f08020c
+int id textView6 0x7f08020d
+int id textView7 0x7f08020e
 int id text_history 0x7f080204
 int id text_input_end_icon 0x7f0801b0
 int id text_input_error_icon 0x7f0801b1
@@ -2505,6 +2511,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
 int layout activity_page 0x7f0b0082
+int layout activity_register 0x7f0b009a
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f

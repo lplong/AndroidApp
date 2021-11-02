@@ -1,48 +1,19 @@
 package vn.edu.usth.pj;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Articles {
-    private String title;
-    private String description;
-    private int image;
-    private String content;
+    @SerializedName("parse")
+    @Expose
+    private Parse parse;
 
-    public String getContent() {
-        return content;
+    public Parse getParse() {
+        return parse;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setParse(Parse parse) {
+        this.parse = parse;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public int image() {
-        return image;
-    }
-
-    public void setImage(int Image) {
-        this.image = image;
-    }
-
-
-    public Articles(String title, String description, int image, String content) {
-        this.title = title;
-        this.description = description;
-        this.image = image;
-        this.content = content;
-    }
 }

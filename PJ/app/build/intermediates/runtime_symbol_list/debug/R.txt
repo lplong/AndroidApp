@@ -2295,6 +2295,7 @@ int id save_desc 0x7f090168
 int id save_home 0x7f090169
 int id save_non_transition_alpha 0x7f09016a
 int id save_overlay_view 0x7f09016b
+int id save_thumbnail 0x7f09020e
 int id save_title 0x7f09016c
 int id saved 0x7f09016d
 int id sawtooth 0x7f09016e

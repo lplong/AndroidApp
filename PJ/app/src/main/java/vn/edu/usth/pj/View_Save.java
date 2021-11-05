@@ -1,15 +1,22 @@
 package vn.edu.usth.pj;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+
 import java.util.List;
+
+import vn.edu.usth.pj.Article_Activity.Article_Page;
 
 public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
     private List<Save_Page> Save_pageArraylist;
@@ -33,6 +40,19 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
         holder.save_title.setText(save_page.getTitle());
         holder.save_desc.setText(save_page.getDesc());
 
+        if (!save_page.getThumbnail().equals("none")){
+            Picasso.get().load(save_page.getThumbnail()).into(holder.save_thumbnail);
+        }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, Article_Page.class);
+                i.putExtra("pageid", Save_pageArraylist.get(holder.getAdapterPosition()).getPageid());
+                context.startActivity(i);
+            }
+        });
+
     }
 
 
@@ -43,10 +63,12 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         private TextView save_title, save_desc;
+        private ImageView save_thumbnail;
         public ViewHolder(android.view.View itemView) {
             super(itemView);
             save_title = itemView.findViewById(R.id.save_title);
             save_desc = itemView.findViewById(R.id.save_desc);
+            save_thumbnail = itemView.findViewById(R.id.save_thumbnail);
         }
     }
 

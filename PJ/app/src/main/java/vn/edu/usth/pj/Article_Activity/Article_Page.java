@@ -22,11 +22,13 @@ import retrofit2.Response;
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.RestAPI.RetrofitAPI;
 import vn.edu.usth.pj.RestAPI.Service;
+import vn.edu.usth.pj.Save_Page;
 import vn.edu.usth.pj.SearchActivity.Searching_Activity;
 import vn.edu.usth.pj.database.SavedDatabase;
 
 
 public class Article_Page extends AppCompatActivity {
+    String title, desc, thumbnail;
     Integer pageid;
     BottomNavigationView bottomNavigationView;
 
@@ -36,6 +38,13 @@ public class Article_Page extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_page);
         pageid = getIntent().getIntExtra("pageid", 0);
+        title = getIntent().getStringExtra("title");
+        desc = getIntent().getStringExtra("desc");
+        if (getIntent().getStringExtra("thumbnail") != null){
+            thumbnail = getIntent().getStringExtra("thumbnail");
+        } else {
+            thumbnail = "none";
+        }
         setPageContent(pageid);
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView_page);
@@ -45,7 +54,10 @@ public class Article_Page extends AppCompatActivity {
 
                 switch (item.getItemId())
                 {
-
+                    case R.id.save:
+                        Save_Page save_page = new Save_Page(title, desc, pageid, thumbnail);
+                        SavedDatabase.getInstance(getApplicationContext()).saveDAO().insertAll(save_page);
+                        Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_LONG).show();
                 }
                 return true;
             }
@@ -63,7 +75,7 @@ public class Article_Page extends AppCompatActivity {
             public void onResponse(Call<Article_FM> call, Response<Article_FM> response) {
                 Article_FM fm = response.body();
 
-                webView.loadData(fm.getParse().getText(),"text/html; charset=UTF-8", null);
+                webView.loadData(fm.getParse().getText(), "text/html; charset=UTF-8", null);
             }
 
             @Override

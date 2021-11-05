@@ -27,12 +27,12 @@ public final class SavedDatabase_Impl extends SavedDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Saved` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `desc` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Saved` (`pageid` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT, `desc` TEXT, `thumbnail` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '18b57c041dfd5383f7ef5c1a701ed44c')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '962b31712e1f0339dfebe538438b6892')");
       }
 
       @Override
@@ -76,10 +76,11 @@ public final class SavedDatabase_Impl extends SavedDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsSaved = new HashMap<String, TableInfo.Column>(3);
-        _columnsSaved.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashMap<String, TableInfo.Column> _columnsSaved = new HashMap<String, TableInfo.Column>(4);
+        _columnsSaved.put("pageid", new TableInfo.Column("pageid", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsSaved.put("title", new TableInfo.Column("title", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsSaved.put("desc", new TableInfo.Column("desc", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsSaved.put("thumbnail", new TableInfo.Column("thumbnail", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysSaved = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesSaved = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoSaved = new TableInfo("Saved", _columnsSaved, _foreignKeysSaved, _indicesSaved);
@@ -91,7 +92,7 @@ public final class SavedDatabase_Impl extends SavedDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "18b57c041dfd5383f7ef5c1a701ed44c", "4b922243353c052118a57af844972dc5");
+    }, "962b31712e1f0339dfebe538438b6892", "ab6a09be83d9e023b9548c2e2dc21c4b");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

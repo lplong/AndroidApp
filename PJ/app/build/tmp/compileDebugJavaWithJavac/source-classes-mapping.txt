@@ -45,6 +45,7 @@ vn/edu/usth/pj/SearchActivity/Query.java
  vn.edu.usth.pj.SearchActivity.Query
 vn/edu/usth/pj/View_Save.java
  vn.edu.usth.pj.View_Save
+ vn.edu.usth.pj.View_Save$1
  vn.edu.usth.pj.View_Save$ViewHolder
 vn/edu/usth/pj/databinding/FragmentSavedBinding.java
  vn.edu.usth.pj.databinding.FragmentSavedBinding

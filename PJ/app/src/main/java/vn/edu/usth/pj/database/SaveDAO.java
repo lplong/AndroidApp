@@ -14,7 +14,7 @@ public interface SaveDAO {
     @Query("SELECT * FROM Saved")
     List<Save_Page> getAll();
 
-    @Query("SELECT * FROM Saved WHERE id IN (:Saved_int)")
+    @Query("SELECT * FROM Saved WHERE pageid IN (:Saved_int)")
     List<Save_Page> loadAllByIds(int[] Saved_int);
 
     @Insert

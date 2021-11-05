@@ -50,6 +50,11 @@ public class Search_Adapter extends RecyclerView.Adapter<Search_Adapter.ViewHold
             public void onClick(View view) {
                 Intent i = new Intent(context, Article_Page.class);
                 i.putExtra("pageid", Search_AdapterArraylist.get(holder.getAdapterPosition()).getPageid());
+                i.putExtra("title", Search_AdapterArraylist.get(holder.getAdapterPosition()).getTitle());
+                i.putExtra("desc", Search_AdapterArraylist.get(holder.getAdapterPosition()).getDescription());
+                if (page.getThumbnail() != null){
+                    i.putExtra("thumbnail", Search_AdapterArraylist.get(holder.getAdapterPosition()).getThumbnail().getSource());
+                }
                 context.startActivity(i);
             }
         });

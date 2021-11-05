@@ -4,6 +4,7 @@ package vn.edu.usth.pj.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +24,16 @@ public final class SavedLayoutBinding implements ViewBinding {
   public final TextView saveDesc;
 
   @NonNull
+  public final ImageView saveThumbnail;
+
+  @NonNull
   public final TextView saveTitle;
 
   private SavedLayoutBinding(@NonNull CardView rootView, @NonNull TextView saveDesc,
-      @NonNull TextView saveTitle) {
+      @NonNull ImageView saveThumbnail, @NonNull TextView saveTitle) {
     this.rootView = rootView;
     this.saveDesc = saveDesc;
+    this.saveThumbnail = saveThumbnail;
     this.saveTitle = saveTitle;
   }
 
@@ -65,13 +70,19 @@ public final class SavedLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.save_thumbnail;
+      ImageView saveThumbnail = ViewBindings.findChildViewById(rootView, id);
+      if (saveThumbnail == null) {
+        break missingId;
+      }
+
       id = R.id.save_title;
       TextView saveTitle = ViewBindings.findChildViewById(rootView, id);
       if (saveTitle == null) {
         break missingId;
       }
 
-      return new SavedLayoutBinding((CardView) rootView, saveDesc, saveTitle);
+      return new SavedLayoutBinding((CardView) rootView, saveDesc, saveThumbnail, saveTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

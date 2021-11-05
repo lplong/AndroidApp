@@ -6,16 +6,25 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Saved")
 public class Save_Page {
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    private Integer pageid;
     private String title;
     private String desc;
+    private String thumbnail;
 
-    public int getId() {
-        return id;
+    public Integer getPageid() {
+        return pageid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPageid(Integer pageid) {
+        this.pageid = pageid;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
     }
 
     public String getTitle() {
@@ -34,8 +43,10 @@ public class Save_Page {
         this.desc = desc;
     }
 
-    public Save_Page(String title, String desc) {
+    public Save_Page(String title, String desc, Integer pageid, String thumbnail) {
+        this.pageid = pageid;
         this.title = title;
         this.desc = desc;
+        this.thumbnail = thumbnail;
     }
 }

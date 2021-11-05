@@ -10,6 +10,7 @@ import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.room.util.StringUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
+import java.lang.Integer;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.StringBuilder;
@@ -33,12 +34,16 @@ public final class SaveDAO_Impl implements SaveDAO {
     this.__insertionAdapterOfSave_Page = new EntityInsertionAdapter<Save_Page>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `Saved` (`id`,`title`,`desc`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR ABORT INTO `Saved` (`pageid`,`title`,`desc`,`thumbnail`) VALUES (?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, Save_Page value) {
-        stmt.bindLong(1, value.getId());
+        if (value.getPageid() == null) {
+          stmt.bindNull(1);
+        } else {
+          stmt.bindLong(1, value.getPageid());
+        }
         if (value.getTitle() == null) {
           stmt.bindNull(2);
         } else {
@@ -49,17 +54,26 @@ public final class SaveDAO_Impl implements SaveDAO {
         } else {
           stmt.bindString(3, value.getDesc());
         }
+        if (value.getThumbnail() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getThumbnail());
+        }
       }
     };
     this.__deletionAdapterOfSave_Page = new EntityDeletionOrUpdateAdapter<Save_Page>(__db) {
       @Override
       public String createQuery() {
-        return "DELETE FROM `Saved` WHERE `id` = ?";
+        return "DELETE FROM `Saved` WHERE `pageid` = ?";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, Save_Page value) {
-        stmt.bindLong(1, value.getId());
+        if (value.getPageid() == null) {
+          stmt.bindNull(1);
+        } else {
+          stmt.bindLong(1, value.getPageid());
+        }
       }
     };
     this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
@@ -116,20 +130,26 @@ public final class SaveDAO_Impl implements SaveDAO {
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
-      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfPageid = CursorUtil.getColumnIndexOrThrow(_cursor, "pageid");
       final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
       final int _cursorIndexOfDesc = CursorUtil.getColumnIndexOrThrow(_cursor, "desc");
+      final int _cursorIndexOfThumbnail = CursorUtil.getColumnIndexOrThrow(_cursor, "thumbnail");
       final List<Save_Page> _result = new ArrayList<Save_Page>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final Save_Page _item;
+        final Integer _tmpPageid;
+        if (_cursor.isNull(_cursorIndexOfPageid)) {
+          _tmpPageid = null;
+        } else {
+          _tmpPageid = _cursor.getInt(_cursorIndexOfPageid);
+        }
         final String _tmpTitle;
         _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
         final String _tmpDesc;
         _tmpDesc = _cursor.getString(_cursorIndexOfDesc);
-        _item = new Save_Page(_tmpTitle,_tmpDesc);
-        final int _tmpId;
-        _tmpId = _cursor.getInt(_cursorIndexOfId);
-        _item.setId(_tmpId);
+        final String _tmpThumbnail;
+        _tmpThumbnail = _cursor.getString(_cursorIndexOfThumbnail);
+        _item = new Save_Page(_tmpTitle,_tmpDesc,_tmpPageid,_tmpThumbnail);
         _result.add(_item);
       }
       return _result;
@@ -144,7 +164,7 @@ public final class SaveDAO_Impl implements SaveDAO {
     StringBuilder _stringBuilder = StringUtil.newStringBuilder();
     _stringBuilder.append("SELECT ");
     _stringBuilder.append("*");
-    _stringBuilder.append(" FROM Saved WHERE id IN (");
+    _stringBuilder.append(" FROM Saved WHERE pageid IN (");
     final int _inputSize = Saved_int.length;
     StringUtil.appendPlaceholders(_stringBuilder, _inputSize);
     _stringBuilder.append(")");
@@ -159,20 +179,26 @@ public final class SaveDAO_Impl implements SaveDAO {
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
-      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfPageid = CursorUtil.getColumnIndexOrThrow(_cursor, "pageid");
       final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
       final int _cursorIndexOfDesc = CursorUtil.getColumnIndexOrThrow(_cursor, "desc");
+      final int _cursorIndexOfThumbnail = CursorUtil.getColumnIndexOrThrow(_cursor, "thumbnail");
       final List<Save_Page> _result = new ArrayList<Save_Page>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final Save_Page _item_1;
+        final Integer _tmpPageid;
+        if (_cursor.isNull(_cursorIndexOfPageid)) {
+          _tmpPageid = null;
+        } else {
+          _tmpPageid = _cursor.getInt(_cursorIndexOfPageid);
+        }
         final String _tmpTitle;
         _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
         final String _tmpDesc;
         _tmpDesc = _cursor.getString(_cursorIndexOfDesc);
-        _item_1 = new Save_Page(_tmpTitle,_tmpDesc);
-        final int _tmpId;
-        _tmpId = _cursor.getInt(_cursorIndexOfId);
-        _item_1.setId(_tmpId);
+        final String _tmpThumbnail;
+        _tmpThumbnail = _cursor.getString(_cursorIndexOfThumbnail);
+        _item_1 = new Save_Page(_tmpTitle,_tmpDesc,_tmpPageid,_tmpThumbnail);
         _result.add(_item_1);
       }
       return _result;

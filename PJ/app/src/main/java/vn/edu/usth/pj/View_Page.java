@@ -1,21 +1,19 @@
 package vn.edu.usth.pj;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import vn.edu.usth.pj.MainPage.Articles;
 
 public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implements Filterable {
     private List<Articles> articlesArrayList;

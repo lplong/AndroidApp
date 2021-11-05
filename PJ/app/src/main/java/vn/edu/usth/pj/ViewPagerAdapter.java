@@ -1,11 +1,14 @@
 package vn.edu.usth.pj;
 
-import android.content.Intent;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import vn.edu.usth.pj.MainActivity.Account;
+import vn.edu.usth.pj.MainActivity.Home;
+import vn.edu.usth.pj.MainActivity.Saved;
+import vn.edu.usth.pj.MainActivity.Search;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {

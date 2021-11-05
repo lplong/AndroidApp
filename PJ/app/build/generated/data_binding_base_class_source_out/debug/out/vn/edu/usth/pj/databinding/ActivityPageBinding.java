@@ -4,8 +4,7 @@ package vn.edu.usth.pj.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -26,30 +25,17 @@ public final class ActivityPageBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationViewPage;
 
   @NonNull
-  public final ImageView imageView2;
-
-  @NonNull
-  public final TextView textView;
-
-  @NonNull
-  public final TextView textView2;
-
-  @NonNull
-  public final TextView textView3;
+  public final WebView pageview;
 
   @NonNull
   public final Toolbar toolbar;
 
   private ActivityPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationViewPage, @NonNull ImageView imageView2,
-      @NonNull TextView textView, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull BottomNavigationView bottomNavigationViewPage, @NonNull WebView pageview,
       @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.bottomNavigationViewPage = bottomNavigationViewPage;
-    this.imageView2 = imageView2;
-    this.textView = textView;
-    this.textView2 = textView2;
-    this.textView3 = textView3;
+    this.pageview = pageview;
     this.toolbar = toolbar;
   }
 
@@ -86,27 +72,9 @@ public final class ActivityPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.pageview;
+      WebView pageview = ViewBindings.findChildViewById(rootView, id);
+      if (pageview == null) {
         break missingId;
       }
 
@@ -117,7 +85,7 @@ public final class ActivityPageBinding implements ViewBinding {
       }
 
       return new ActivityPageBinding((ConstraintLayout) rootView, bottomNavigationViewPage,
-          imageView2, textView, textView2, textView3, toolbar);
+          pageview, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

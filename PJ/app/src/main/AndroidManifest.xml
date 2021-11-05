@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PJ">
         <activity
-            android:name=".search.Searching_Activity"
+            android:name=".SearchActivity.Searching_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Searching" >
             <intent-filter>
@@ -28,16 +28,16 @@
         <activity
             android:name=".SettingsActivity"
             android:label="Settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MainActivity.MainActivity" />
         </activity>
         <activity
-            android:name=".Article_Page"
+            android:name=".Article_Activity.Article_Page"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Setting" />
     </application>
 
 </manifest>

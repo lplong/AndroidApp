@@ -2161,7 +2161,6 @@ int id ignore 0x7f0900e2
 int id ignoreRequest 0x7f0900e3
 int id image 0x7f0900e4
 int id imageView 0x7f0900e5
-int id imageView2 0x7f0900e6
 int id immediateStop 0x7f0900e7
 int id included 0x7f0900e8
 int id info 0x7f0900e9
@@ -2261,6 +2260,7 @@ int id outline 0x7f090146
 int id outward 0x7f090147
 int id overshoot 0x7f090148
 int id packed 0x7f090149
+int id pageview 0x7f09020d
 int id parallax 0x7f09014a
 int id parent 0x7f09014b
 int id parentPanel 0x7f09014c
@@ -2397,9 +2397,6 @@ int id textSpacerNoButtons 0x7f0901cc
 int id textSpacerNoTitle 0x7f0901cd
 int id textStart 0x7f0901ce
 int id textTop 0x7f0901cf
-int id textView 0x7f0901d0
-int id textView2 0x7f0901d1
-int id textView3 0x7f0901d2
 int id textView4 0x7f0901d3
 int id textView5 0x7f0901d4
 int id textView6 0x7f0901d5
@@ -2547,7 +2544,6 @@ int layout fragment_account 0x7f0c0031
 int layout fragment_home 0x7f0c0032
 int layout fragment_saved 0x7f0c0033
 int layout fragment_search 0x7f0c0034
-int layout fragment_setting 0x7f0c0035
 int layout history_layout 0x7f0c0036
 int layout image_frame 0x7f0c0037
 int layout material_chip_input_combo 0x7f0c0038

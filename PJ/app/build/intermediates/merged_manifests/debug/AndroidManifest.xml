@@ -22,7 +22,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.PJ" >
         <activity
-            android:name="vn.edu.usth.pj.search.Searching_Activity"
+            android:name="vn.edu.usth.pj.SearchActivity.Searching_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Searching" >
             <intent-filter>
@@ -39,16 +39,16 @@
         <activity
             android:name="vn.edu.usth.pj.SettingsActivity"
             android:label="Settings"
-            android:parentActivityName="vn.edu.usth.pj.MainActivity" >
+            android:parentActivityName="vn.edu.usth.pj.MainActivity.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MainActivity.MainActivity" />
         </activity>
         <activity
-            android:name="vn.edu.usth.pj.Article_Page"
+            android:name="vn.edu.usth.pj.Article_Activity.Article_Page"
             android:exported="true" />
         <activity
-            android:name="vn.edu.usth.pj.MainActivity"
+            android:name="vn.edu.usth.pj.MainActivity.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,7 +56,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="vn.edu.usth.pj.Setting" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

@@ -488,6 +488,8 @@ attr forceApplySystemWindowInsetTop
 attr foregroundInsidePadding
 attr fragment
 attr framePosition
+attr fullscreenBackgroundColor
+attr fullscreenTextColor
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
@@ -1151,6 +1153,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color black_overlay
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1215,6 +1218,10 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_blue_600
+color light_blue_900
+color light_blue_A200
+color light_blue_A400
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1932,6 +1939,9 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id Rdesc
+id Rimg
+id Rtitle
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2297,6 +2307,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id search
+id search_act
 id search_badge
 id search_bar
 id search_button
@@ -2305,7 +2316,9 @@ id search_edit_frame
 id search_go_btn
 id search_in
 id search_mag_icon
+id search_menu
 id search_plate
+id search_result
 id search_src_text
 id search_voice_btn
 id searchview
@@ -2513,6 +2526,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_page
 layout activity_register
+layout activity_search
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2613,6 +2627,7 @@ layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
 layout saved_layout
+layout searchresult_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2636,6 +2651,7 @@ layout text_view_without_line_height
 menu menu_bar
 menu page_menu
 menu save_menu
+menu search_menu
 menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2680,6 +2696,8 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string copy
+string dummy_button
+string dummy_content
 string error_icon_content_description
 string expand_button_title
 string exposed_dropdown_menu_content_description
@@ -2761,6 +2779,7 @@ string steam
 string summary_collapsed_preference_list
 string sync_header
 string sync_title
+string title_activity_fullscreen
 string title_activity_settings
 string v7_preference_off
 string v7_preference_on
@@ -3270,6 +3289,7 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_PJ
+style Theme_PJ_Fullscreen
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -3318,6 +3338,7 @@ style ThemeOverlay_MaterialComponents_TimePicker
 style ThemeOverlay_MaterialComponents_TimePicker_Display
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style ThemeOverlay_PJ_FullscreenContainer
 style ThemeOverlayColorAccentRed
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
@@ -3525,6 +3546,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style Widget_Theme_PJ_ActionBar_Fullscreen
+style Widget_Theme_PJ_ButtonBar_Fullscreen
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -3584,6 +3607,7 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
+styleable FullscreenAttrs fullscreenBackgroundColor fullscreenTextColor
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
@@ -3636,7 +3660,7 @@ styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
-styleable Preference android_icon android_persistent android_enabled android_layout android_title android_selectable android_key android_summary android_order android_widgetLayout android_dependency android_defaultValue android_shouldDisableView android_fragment android_singleLineTitle android_iconSpaceReserved icon layout title allowDividerAbove allowDividerBelow defaultValue dependency enableCopying enabled fragment iconSpaceReserved isPreferenceVisible key order persistent selectable shouldDisableView singleLineTitle summary widgetLayout
+styleable Preference android_icon android_persistent android_enabled android_layout android_title android_selectable android_key android_summary android_order android_widgetLayout android_dependency android_defaultValue android_shouldDisableView android_fragment android_singleLineTitle android_iconSpaceReserved allowDividerAbove allowDividerBelow defaultValue dependency enableCopying enabled fragment icon iconSpaceReserved isPreferenceVisible key layout order persistent selectable shouldDisableView singleLineTitle summary title widgetLayout
 styleable PreferenceFragment android_layout android_divider android_dividerHeight allowDividerAfterLastItem
 styleable PreferenceFragmentCompat android_layout android_divider android_dividerHeight allowDividerAfterLastItem
 styleable PreferenceGroup android_orderingFromXml initialExpandedChildrenCount orderingFromXml
@@ -3685,6 +3709,7 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml preferences
 xml root_preferences
+xml searchable
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

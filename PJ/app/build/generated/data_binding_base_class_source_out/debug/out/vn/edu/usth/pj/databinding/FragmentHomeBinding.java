@@ -4,11 +4,11 @@ package vn.edu.usth.pj.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -21,13 +21,13 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView newsAp;
+  public final WebView newsAp;
 
   @NonNull
-  public final SearchView searchviewHome;
+  public final Button searchviewHome;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView newsAp,
-      @NonNull SearchView searchviewHome) {
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull WebView newsAp,
+      @NonNull Button searchviewHome) {
     this.rootView = rootView;
     this.newsAp = newsAp;
     this.searchviewHome = searchviewHome;
@@ -61,13 +61,13 @@ public final class FragmentHomeBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.news_ap;
-      RecyclerView newsAp = ViewBindings.findChildViewById(rootView, id);
+      WebView newsAp = ViewBindings.findChildViewById(rootView, id);
       if (newsAp == null) {
         break missingId;
       }
 
       id = R.id.searchview_home;
-      SearchView searchviewHome = ViewBindings.findChildViewById(rootView, id);
+      Button searchviewHome = ViewBindings.findChildViewById(rootView, id);
       if (searchviewHome == null) {
         break missingId;
       }

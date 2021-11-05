@@ -13,6 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PJ">
         <activity
+            android:name=".search.Searching_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Searching" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
@@ -24,7 +34,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Page"
+            android:name=".Article_Page"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

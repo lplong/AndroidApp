@@ -4,10 +4,11 @@ package vn.edu.usth.pj.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -17,19 +18,24 @@ import vn.edu.usth.pj.R;
 
 public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final SearchView searchview;
+  public final Button searchview;
 
-  private FragmentSearchBinding(@NonNull FrameLayout rootView, @NonNull SearchView searchview) {
+  @NonNull
+  public final TextView textHistory;
+
+  private FragmentSearchBinding(@NonNull RelativeLayout rootView, @NonNull Button searchview,
+      @NonNull TextView textHistory) {
     this.rootView = rootView;
     this.searchview = searchview;
+    this.textHistory = textHistory;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -55,12 +61,18 @@ public final class FragmentSearchBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.searchview;
-      SearchView searchview = ViewBindings.findChildViewById(rootView, id);
+      Button searchview = ViewBindings.findChildViewById(rootView, id);
       if (searchview == null) {
         break missingId;
       }
 
-      return new FragmentSearchBinding((FrameLayout) rootView, searchview);
+      id = R.id.text_history;
+      TextView textHistory = ViewBindings.findChildViewById(rootView, id);
+      if (textHistory == null) {
+        break missingId;
+      }
+
+      return new FragmentSearchBinding((RelativeLayout) rootView, searchview, textHistory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

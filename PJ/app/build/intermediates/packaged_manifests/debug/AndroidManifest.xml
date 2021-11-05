@@ -22,6 +22,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.PJ" >
         <activity
+            android:name="vn.edu.usth.pj.search.Searching_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Searching" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
             android:name="vn.edu.usth.pj.Register"
             android:exported="false" />
         <activity
@@ -33,7 +45,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name="vn.edu.usth.pj.Page"
+            android:name="vn.edu.usth.pj.Article_Page"
             android:exported="true" />
         <activity
             android:name="vn.edu.usth.pj.MainActivity"

@@ -19,4 +19,16 @@
     <style name="FontSizeLarge">
         <item name="android:textSize">40sp</item>
     </style>
+
+    <style name="Theme.PJ.Fullscreen" parent="Theme.PJ">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="titleTextColor">@color/black</item>
+    </style>
+
+    <style name="ThemeOverlay.PJ.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
 </resources>

@@ -1,5 +1,6 @@
 package vn.edu.usth.pj;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +10,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +26,10 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import vn.edu.usth.pj.search.Searching_Activity;
+import vn.edu.usth.pj.testingAPI.Example;
+import vn.edu.usth.pj.testingAPI.REST_BASE;
+import vn.edu.usth.pj.testingAPI.Section;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -109,7 +118,7 @@ public class Home extends Fragment {
 //        return list;
 //    }
 
-        TextView textV = (TextView) rootView.findViewById(R.id.news_ap);
+        WebView textV = (WebView) rootView.findViewById(R.id.news_ap);
 
         RetrofitAPI wikiApi = Service.createService(RetrofitAPI.class);
 
@@ -122,15 +131,39 @@ public class Home extends Fragment {
                     Toast.makeText(getContext(), "404", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+
                 Articles main = response.body();
 
-                textV.setText(Html.fromHtml(main.getParse().getText()));
+                Log.v("Home", "The response"+main.getParse().getText());
+
+                //textV.setText(Html.fromHtml(main.getParse().getText()));
+//                textV.getSettings().setLoadWithOverviewMode(true);
+//                textV.getSettings().setUseWideViewPort(true);
+
+//                List<Section> sections = main.getLead().getSections();
+//                for (Section i : sections){
+////                    textV.getSettings().setLoadWithOverviewMode(true);
+////                    textV.getSettings().setUseWideViewPort(true);
+//                    textV.loadData(i.getText(),"text/html; charset=UTF-8", null);
+//                }
+
+                textV.loadData(main.getParse().getText(), "text/html; charset=UTF-8", null);
             }
 
             @Override
             public void onFailure(Call<Articles> call, Throwable t) {
                 Toast.makeText(getContext(), "Failed", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        Button button = (Button) rootView.findViewById(R.id.searchview_home);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), Searching_Activity.class);
+                startActivity(i);
             }
         });
 

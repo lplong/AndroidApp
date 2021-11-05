@@ -25,6 +25,9 @@ public final class FragmentAccountBinding implements ViewBinding {
   public final Button button;
 
   @NonNull
+  public final Button button3;
+
+  @NonNull
   public final EditText editTextTextEmailAddress;
 
   @NonNull
@@ -34,10 +37,11 @@ public final class FragmentAccountBinding implements ViewBinding {
   public final ImageView imageView;
 
   private FragmentAccountBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull EditText editTextTextEmailAddress, @NonNull EditText editTextTextPassword,
-      @NonNull ImageView imageView) {
+      @NonNull Button button3, @NonNull EditText editTextTextEmailAddress,
+      @NonNull EditText editTextTextPassword, @NonNull ImageView imageView) {
     this.rootView = rootView;
     this.button = button;
+    this.button3 = button3;
     this.editTextTextEmailAddress = editTextTextEmailAddress;
     this.editTextTextPassword = editTextTextPassword;
     this.imageView = imageView;
@@ -76,6 +80,12 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button3;
+      Button button3 = ViewBindings.findChildViewById(rootView, id);
+      if (button3 == null) {
+        break missingId;
+      }
+
       id = R.id.editTextTextEmailAddress;
       EditText editTextTextEmailAddress = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextEmailAddress == null) {
@@ -94,7 +104,7 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountBinding((ConstraintLayout) rootView, button,
+      return new FragmentAccountBinding((ConstraintLayout) rootView, button, button3,
           editTextTextEmailAddress, editTextTextPassword, imageView);
     }
     String missingId = rootView.getResources().getResourceName(id);

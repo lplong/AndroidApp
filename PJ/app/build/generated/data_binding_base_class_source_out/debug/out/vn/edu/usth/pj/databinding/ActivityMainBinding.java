@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,13 +43,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FloatingActionButton person;
 
   @NonNull
-  public final FrameLayout reFrame;
+  public final ViewPager2 reFrame;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomAppBar bottomappbar, @NonNull BottomNavigationView bottomnavigationbar,
       @NonNull ConstraintLayout content, @NonNull CoordinatorLayout coordinator,
       @NonNull FrameLayout framecontainer, @NonNull FloatingActionButton person,
-      @NonNull FrameLayout reFrame) {
+      @NonNull ViewPager2 reFrame) {
     this.rootView = rootView;
     this.bottomappbar = bottomappbar;
     this.bottomnavigationbar = bottomnavigationbar;
@@ -119,7 +120,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.reFrame;
-      FrameLayout reFrame = ViewBindings.findChildViewById(rootView, id);
+      ViewPager2 reFrame = ViewBindings.findChildViewById(rootView, id);
       if (reFrame == null) {
         break missingId;
       }

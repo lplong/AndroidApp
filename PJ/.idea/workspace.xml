@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -29,10 +29,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Interface" />
-        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -52,10 +52,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/ADMIN/AndroidStudioProjects/PJ/app/src/main/java/vn/edu/usth/pj/search/Search_Adapter.java_SELECTED" value="Search_Adapter" />
+    <property name="android-custom-viewC:/Users/ADMIN/AndroidStudioProjects/PJ/app/src/main/java/vn/edu/usth/pj/search/Search_Adapter.java_Search_Adapter_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/ADMIN/AndroidStudioProjects/PJ/app/src/main/java/vn/edu/usth/pj/search/Search_Adapter.java_Search_Adapter_WRAP_CONTENT_W" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-retrofit-video-master" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="vn.edu.usth.pj.search" />
+      <recent name="vn.edu.usth.pj.testingAPI" />
       <recent name="vn.edu.usth.pj" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -75,6 +80,10 @@
       <recent name="vn.edu.usth.pj" />
     </key>
     <key name="android.template.-930653739">
+      <recent name="vn.edu.usth.pj" />
+    </key>
+    <key name="android.template.1609074272">
+      <recent name="vn.edu.usth.pj.search" />
       <recent name="vn.edu.usth.pj" />
     </key>
     <key name="android.template.-1221293755">

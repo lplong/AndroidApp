@@ -1,5 +1,6 @@
 package vn.edu.usth.pj;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
@@ -8,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import vn.edu.usth.pj.search.Searching_Activity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,6 +66,15 @@ public class Search extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_search, container, false);
+        Button button = (Button) rootView.findViewById(R.id.searchview);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), Searching_Activity.class);
+                startActivity(i);
+            }
+        });
+        return  rootView;
     }
 }

@@ -4,6 +4,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import vn.edu.usth.pj.testingAPI.API_REST;
 
 public class Service {
     private static Retrofit.Builder retrofitbuild =
@@ -22,6 +23,12 @@ public class Service {
 
     public static <S> S createService(
             Class<S> serviceClass) {
+        if (!httpClient.interceptors().contains(logging)) {
+            httpClient.addInterceptor(logging);
+            retrofitbuild.client(httpClient.build());
+            retrofit = retrofitbuild.build();
+        }
+
         return retrofit.create(serviceClass);
     }
 }

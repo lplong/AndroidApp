@@ -2543,9 +2543,13 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_account
+layout fragment_blank
+layout fragment_history
 layout fragment_home
 layout fragment_saved
 layout fragment_search
+layout fragment_setting
+layout fragment_shuffle
 layout history_layout
 layout image_frame
 layout material_chip_input_combo

@@ -73,25 +73,25 @@ public class Home extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        rview = (RecyclerView) rootView.findViewById(R.id.news_ap);
-//        searchView = (SearchView) rootView.findViewById(R.id.searchview_home);
-//        rview.setLayoutManager(new LinearLayoutManager(getContext()));
-//        view_page = new View_Page(getArticle(), getContext());
-//        rview.setAdapter(view_page);
+        rview = (RecyclerView) rootView.findViewById(R.id.news_ap);
+        searchView = (SearchView) rootView.findViewById(R.id.searchview_home);
+        rview.setLayoutManager(new LinearLayoutManager(getContext()));
+        view_page = new View_Page(getArticle(), getContext());
+        rview.setAdapter(view_page);
 //
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                view_page.getFilter().filter(query);
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                view_page.getFilter().filter(newText);
-//                return false;
-//            }
-//        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                view_page.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                view_page.getFilter().filter(newText);
+                return false;
+            }
+        });
 
         return rootView;
 
@@ -101,7 +101,7 @@ public class Home extends Fragment {
         List<Articles> list = new ArrayList<>();
         list.add(new Articles("Rainbow Six Siege", "Online tactical shooter video game by Ubisoft", R.drawable.r6, getString(R.string.r6)));
         list.add(new Articles("Steam", "Video game service", R.drawable.steam, getString(R.string.steam)));
-        list.add(new Articles("YouTube", "Online video platform owned by Google", R.drawable.yt, getString(R.string.yt)));
+        list.add(new Articles("YouTube", "Online video platform owned by Google", R.drawable.yt_2, getString(R.string.yt)));
         return list;
     }
 }

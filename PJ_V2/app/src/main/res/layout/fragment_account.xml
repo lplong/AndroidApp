@@ -63,9 +63,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="210dp"
-        android:layout_height="164dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_width="349dp"
+        android:layout_height="212dp"
+        android:src="@drawable/wiki"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

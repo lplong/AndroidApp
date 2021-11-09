@@ -33,6 +33,7 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
         holder.save_title.setText(save_page.getTitle());
         holder.save_desc.setText(save_page.getDesc());
 
+
     }
 
 
@@ -47,6 +48,7 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
             super(itemView);
             save_title = itemView.findViewById(R.id.save_title);
             save_desc = itemView.findViewById(R.id.save_desc);
+
         }
     }
 
